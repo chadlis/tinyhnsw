@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Clean pycache",
+            "type": "shell",
+            "command": "find . -type d -name __pycache__ -exec rm -rf {} +",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run tests",
+            "type": "shell",
+            "command": "uv run pytest --cov=tinygraph --cov-report=term-missing",
+            "problemMatcher": []
+        },
+        {
+            "label": "Ruff check",
+            "type": "shell",
+            "command": "uv run ruff check tests src",
+            "problemMatcher": []
+        },
+        {
+            "label": "Ruff format",
+            "type": "shell",
+            "command": "uv run ruff format tests src",
+            "problemMatcher": []
+        },
+        {
+            "label": "Ruff fix",
+            "type": "shell",
+            "command": "uv run ruff check --fix tests src",
+            "problemMatcher": []
+        },
+        {
+            "label": "Mypy type check",
+            "type": "shell",
+            "command": "uv run mypy tests src",
+            "problemMatcher": []
+        }
+    ]
+}
