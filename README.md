@@ -16,7 +16,7 @@ This gives O(log N) approximate search with high recall.
 ## Roadmap
 
 Roadmap
-- [ ] Distance functions (euclidean, cosine)
+- [x] Distance functions (euclidean, cosine)
 - [ ] Brute-force KNN baseline
 - [ ] Shared types & data structures
 - [ ] Single-layer NSW graph
