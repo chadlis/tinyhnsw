@@ -1,8 +1,6 @@
 import math
-from collections.abc import Callable
 
-Vector = list[float]
-DistanceFn = Callable[[Vector, Vector], float]
+from tinyhnsw.types import Vector
 
 
 def euclidean_distance(vec1: Vector, vec2: Vector) -> float:
